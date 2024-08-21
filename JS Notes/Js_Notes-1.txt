@@ -1,0 +1,62 @@
+******************************* JavaScript Notes - 1 ***********************************
+
+---> Console works in "REPL" - Read, Evaluate, Print, & Loop principle.
+---> JavaScript automatically fetch the types of variables/data, we don't need explicitely to define data types.
+
+
+1. variables :- It is simply a name of storage location.  
+---> Each variables have a data limit, means we can't store unlimited data in some variable.
+
+2. Data types in JavaScript :-
+                    * Primitive types :- sabse basic & sabse fundamental
+                                        1. Number :- Integers, decimal nos. eg:- 1, -4, 0.5, -4.5 etc.
+                                        2. Boolean :- 
+                                        3. String
+                                        4. Undefined
+                                        5. Null
+                                        6. Bigint
+                                        7. Symbol 
+
+
+3. Operations in JavaScript :- 
+--> operands :- jiske uper Operation perform kiya jata h.
+--> operators :- Jo operation perform karega. 
+--> operators :- 1. + addition
+                 2. - subtraction
+                 3. * multiplication 
+                 4. / division
+                 5. % modulo(remainder operator)
+                 6. ** exponentiation(power operator)
+
+
+4. NaN(Not a Number) :- NaN is a JavaScript property, and it is a number which represents invalid numbers. eg:- 0/0.
+--> operations can be perform with NaN but the answers will be also Nan.
+
+
+--> precedence = priority.
+5. Operator precedence :- kisi expression ko solve karne ke liye operators ka priority.
+                            1.   (bracket)
+
+                            2.   ** (power)
+
+                            3.   * , / , %
+
+                            4.   + , -
+
+                            --> in case of same priority we follow Left to right rule. 
+                            --> in case of multiple power opertor only follow right to left rule.
+
+
+6. Keywords in JavaScript :- these are reserved words which have fixed meanings, and can't use as a variable or something else.
+
+--> (a.) Let Keyword :- It helps declare variables.
+                     --> eg:- let age = 22; let b; let num = 13; etc.
+                     --> let Keyword ko hm bas ek bar starting me variable declare karte time likhte h,
+                      bad me us variable me changes karte time let ko dubara use nhi karenge.
+
+--> (b.) const Keyword :- Ye constant variables ko declare karne ke liye use hota h, jiska value hmesha fixed 
+                          rahega aur bad me is value ko change nhi kar sakte. 
+
+--> (c.) var Keyword :- old syntax of writing variables. eg:- var age = 23;
+                      --> we will not use this to declare variables, instead of this we will use let Keyword.
+
