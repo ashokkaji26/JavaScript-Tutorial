@@ -1,7 +1,28 @@
 ******************************* JavaScript Notes - 1 ***********************************
 
+
+**** Contents :- 1. variables                      8. Binary operators
+                 2. Data types in JavaScript       9. Primary operators
+                 3. Operation in JavaScript        10. Identifier Rules
+                 4. Nan                            11. Way of writing Identifiers
+                 5. operator precedence            12. String Indices
+                 6. Keywords in JavaScript         13. Concatenation
+                 7. Assignment operators           
+
+
+**** Important Points :- 
+
 ---> Console works in "REPL" - Read, Evaluate, Print, & Loop principle.
 ---> JavaScript automatically fetch the types of variables/data, we don't need explicitely to define data types.
+---> JavaScript is case sensitive language.
+---> JavaScript me kisi variable ka type bad me change kiya ja sakta h, siply by changing its value.
+---> dynamic = jo chije change ho sakti h.
+---> JavaScript is dynamic typed means, the type of variables can be changed.
+---> static = fixed.
+---> TypeScript :- It is strict version of JavaScript, and it is static typed, means type of variables can't be changed.
+                   it is desinged by Microsoft.
+
+
 
 
 1. variables :- It is simply a name of storage location.  
@@ -10,10 +31,19 @@
 2. Data types in JavaScript :-
                     * Primitive types :- sabse basic & sabse fundamental
                                         1. Number :- Integers, decimal nos. eg:- 1, -4, 0.5, -4.5 etc.
-                                        2. Boolean :- 
-                                        3. String
-                                        4. Undefined
-                                        5. Null
+                                        2. Boolean :- ture/false.
+                                        3. String :- Strings are text(words, sentences, paragraphs) or sequence of characters.
+                                                   eg:- (a.) let name = "sachin Kaji";
+                                                        (b.) let role = "ironman";
+                                                        (c.) let empty = " ";
+                                                        (d.) let num = "26";
+                                                        (e.) let characters = "jfdkjfd   &^%$  1234  everything";
+                                                        (f.) let sentence = "this is 'apple'";
+
+                                        4. Undefined :- Waisa variables jinko koi value nhi mili.
+                                                     --> JavaScript says mujhe nhi pata = Undefined.
+                                        5. Null :- agar kisi variable ko jan bujh kar koi v value nhi deni h, to use hm null value dete h.
+                                                eg:- let a = null;
                                         6. Bigint
                                         7. Symbol 
 
@@ -59,4 +89,51 @@
 
 --> (c.) var Keyword :- old syntax of writing variables. eg:- var age = 23;
                       --> we will not use this to declare variables, instead of this we will use let Keyword.
+
+---> let age = 23;
+            --> age + 2;   --> no updation, only 25 will print in console.
+            --> age = age + 2; --> age will updated.
+
+
+7. Assignment operators :-  let age = 22;
+                            (a.) age += 2;
+                            (b.) age -= 2;
+                            (c.) age *= 2;
+                            (d.) age /= 2;
+
+
+8. Binary operators :- jis operators ko 2 operands chahiye hota h.
+                    eg:- +, -, *, / etc.
+
+9. Primary operators :- ise ek hi operands chahiye hota h.
+                      eg:- (a.) ++age(pre-increment)  --> change, then use.
+                           (b.) age++(post-increment) --> use, then change.
+                           (c.) --age(pre-decrement)
+                           (d.) age--(post-decrement)
+
+10. Identifier Rules :- all JavaScript variables must have unique names, called Identifiers.
+                     (a.) Names can contain letters, digits, underscores, and dollar sign($).
+                     (b.) No space is allowed.
+                     (c.) Names can begin with letter, underscore and dollar sign.
+                     (d.) Names are case sensitive.
+                     (e.) reserved words can't be used as names.
+
+
+11. Way of writing Identifiers :- 
+                                (a.) camelCase  (JS & C++ naming convention)
+                                (b.) snake_case (Python naming convention)
+                                (c.) PascalCase    
+
+
+---> In programming Indices = position.
+12. String Indices :-  JavaScript me jo string bante h, uske har ek characters ko ek index(position) milti h.
+                       jo ki zero se start hoti h.
+                       --> zero based indexing :- indexing start from zero. eg:- JavaScript, java, c++.
+                       --> Aur hm chahe to string ke kisi v particular character ko access kar sakte h using index. eg:- variable_name[index];
+                       --> variable.length; --> string length.
+
+
+13. Concatenation :- multiple strings ko add kar dena.
+                    eg:- (a.) "Sachin" + " " + "Kaji" = "Sachin Kaji";
+                         (b.) "sachin" + 26 = "sachin26";
 
