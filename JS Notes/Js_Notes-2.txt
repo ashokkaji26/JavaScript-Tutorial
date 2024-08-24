@@ -1,1 +1,36 @@
 ******************************* JavaScript Notes - 2 ***********************************
+
+*** Contents :-
+
+*** Important Points :- 
+
+---> log means likh dena.
+---> Hm koi v JavaScript file banayenge uske sath ek index.html file associate karenge.
+---> JavaScript file ko browser ke console me print karane ke liye, JavaScript file ko pahle html file ke sath 
+     link karna padta h, using <script src="app.js"></script>.
+---> <script> tag ko html me </body> tag ke just pahle likhte h, qki JavaScript functioning add karta h, 
+    to functioning add karne se pahle sare html elements load hone chahiye isliye JavaScript ko sabse last me 
+    add karte h.
+
+1. Console.log() :- Console window me kuchh v chij print karane ke liye.
+                 --> console.log() ka use isliye hota h, qki JavaScript browser se connected nhi hota h,
+                     to JavaScript me kuchh v chij print karna chahte aur wo browser ke console me dikhe uske liye
+                     console.log() ka use hota h.
+                     eg:- (a.) console.log("Sachin Kaji");
+                          (b.) console.log(1234);
+                          (c.) console.log(2 + 2);
+                          (d.) console.log("Sachin", "Kaji", 123);
+
+
+2. Template Literals :- jab v hme string ke under variables ko add karna hota h to hme bht sari chije karni padti h,
+                        like sare strings ko concatenate karna, variables ko add karna to isi concatenation ko easy
+                        karne ke liye hmare pass Template Literals hote h.
+
+                     --> let pencilPrice = 10;   let penPrice = 20;
+                     --> way-1 :- console.log("The total price is: ", pencilPrice + penPrice, "Rupees.");
+                     --> way-2 :- let output = "The total price is: " + (pencilPrice + penPrice) + "Rupees.";
+                         --> console.log(output);
+                     --> way-3(Template Literals) :- ` The total price is: ${pencilPrice + penPrice} Rupees.`;
+
+
+3. 
