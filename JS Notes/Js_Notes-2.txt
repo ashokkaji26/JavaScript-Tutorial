@@ -33,4 +33,59 @@
                      --> way-3(Template Literals) :- ` The total price is: ${pencilPrice + penPrice} Rupees.`;
 
 
-3. 
+3. Operators in JavaScript :- 
+                    1. Arithmetic Operators :- + , - , * , / , % , **
+
+                    2. Unary Operators :- ++ , --
+
+                    3. Assignment Operators :- = , += , -= , *= , /= , %=, **=
+
+                    4. Comparison Operators :- == , != , >= , <= , < , > 
+                    ---> It compares values not type.
+                    ---> === used for strict Comparison, and it compares both values and types.
+
+                    5. Logical Operators :- 
+
+
+4. Comparison for non-numbers :- each character has its own unique code called "unicode" that get compared.
+
+--> Condition ya to true hota h ya false hota h.
+5. Conditional statements :- 
+                          1. If statement :- 
+                                           if(some Condition) {
+                                            // do something.
+                                           }
+
+                          2. Else if statement :- if statement false hoga, tabhi else if wali statement check hoga,
+                                                  aur multiple else if case me koi else if statement true hone ke bad aage koi v else if statement check nhi hoga,
+                                                  aur program execute ho kar exit ho jayega.
+
+                                            if() {
+
+                                            }
+                                            else if() {
+
+                                            }
+                                            else if() {
+
+                                            }
+
+                          3. Else statement :- uper k sare statements false hone k bad else execute ho jata h,
+                                               without checking any condition.
+                                            --> we can use if only, we can use if else-if only but a good program is that 
+                                                in which we use if, if else-if and else together.
+
+                                            if() {
+
+                                            }
+                                            else if() {
+
+                                            }
+                                            else if() {
+
+                                            }
+                                            else {
+                                                
+                                            }
+
+                                            
