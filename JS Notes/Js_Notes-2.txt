@@ -44,12 +44,17 @@
                     ---> It compares values not type.
                     ---> === used for strict Comparison, and it compares both values and types.
 
-                    5. Logical Operators :- 
+                    5. Logical Operators :- Logical Operators expressions ko combine karne ke liye use hote h.
+                    --> && , || , !(Logical not).
+                    --> jab multiple expressions hote h, aur bht sare Logical Operators hote h, fir hm Logical Operators 
+                        ko left to right calculate karte h.
+
 
 
 4. Comparison for non-numbers :- each character has its own unique code called "unicode" that get compared.
 
 --> Condition ya to true hota h ya false hota h.
+
 5. Conditional statements :- 
                           1. If statement :- 
                                            if(some Condition) {
@@ -87,5 +92,18 @@
                                             else {
                                                 
                                             }
+
+                          4. Nested if-else :- if-else ke under if-else uske under v if-else called nested if-else.
+                                                  
+                                           if (){
+                                                    if(){
+
+                                                    } else {}
+                                           } else {
+
+                                           }
+
+                        
+
 
                                             

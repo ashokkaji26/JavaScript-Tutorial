@@ -130,7 +130,7 @@
                        jo ki zero se start hoti h.
                        --> zero based indexing :- indexing start from zero. eg:- JavaScript, java, c++.
                        --> Aur hm chahe to string ke kisi v particular character ko access kar sakte h using index. eg:- variable_name[index];
-                       --> variable.length; --> string length.
+                       --> variable.length; --> string ki length, means how many characters are there in string.
 
 
 13. Concatenation :- multiple strings ko add kar dena.
