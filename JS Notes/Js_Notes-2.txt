@@ -1,6 +1,13 @@
 ******************************* JavaScript Notes - 2 ***********************************
 
 *** Contents :-
+               1. Console.log()                     6. Truthy & Falsy
+               2. Template Literals                 7. switch statement
+               3. Operators in JavaScript           8. 
+               4. Comparison for non-numbers        9. 
+               5. conditional statements            10.
+               
+               
 
 *** Important Points :- 
 
@@ -103,6 +110,37 @@
 
                                            }
 
+
+6. Truthy & Falsy :- JavaScript ke under har ek chij ke pass apni ek boolean value hoti h, wo value ya to 
+                     true ho sakti ya to false.
+                     --> iska ye mtlb nhi h ki agar koi variable banaye to uska value T/F hoga, uski apni jo
+                         value h wahi rahega, bas boolean context me uske pass true ya false value hoga.
+                     --> Falsy values :- false, 0 , -0 , 0n(big int value), ""(empty string), null, undefined, Nan.
+                     --> Truthy values :- Everything else.                                       
+
+
+
+7. Switch statement :- ye if-else statement ko hi likhne ka dusra tarika h, jab fised value ke basis par comparison hote h.
+                        let string = "AC";
+                    --> break; ka mtlb hota h, ab iske aage nhi jana h aur switch se exist ho jana h.
+                    --> JavaScript me agar kisi ek switch ke bad break nhi lagaya , to uske bad ke sare ke sare 
+                        switches on ho jayegi automatically.
+
+                    -->switch(string) {
+                            case "light": 
+                            console.log("Light is on.");
+                            break;
+                            case "AC": 
+                            console.log("AC is on.");
+                            break;
+                            case "fan": 
+                            console.log("Fan is on.");
+                            break;
+                            default:
+                            console.log("Electricity is not available right now.");
+                        }
+
+8. 
                         
 
 
