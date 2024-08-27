@@ -1,13 +1,13 @@
 ******************************* JavaScript Notes - 1 ***********************************
 
 
-**** Contents :- 1. variables                      8. Binary operators
-                 2. Data types in JavaScript       9. Primary operators
-                 3. Operation in JavaScript        10. Identifier Rules
-                 4. Nan                            11. Way of writing Identifiers
-                 5. operator precedence            12. String Indices
-                 6. Keywords in JavaScript         13. Concatenation
-                 7. Assignment operators           
+**** Topics covered :-   1. variables                      8. Binary operators
+                         2. Data types in JavaScript       9. Primary operators
+                         3. Operation in JavaScript        10. Identifier Rules
+                         4. Nan                            11. Way of writing Identifiers
+                         5. operator precedence            12. String Indices
+                         6. Keywords in JavaScript         13. Concatenation
+                         7. Assignment operators           
 
 
 **** Important Points :- 
