@@ -1,0 +1,74 @@
+**********************  JavaScript-4 *************************
+
+*** Topics covered :- 
+                        1. Loop
+                        2. Dry Run
+                        3. Nested Loop
+                        4.
+                        5.
+                        6.
+
+*** Important Points :- 
+---> Prompt se jo v input aata h, wo string ke form me aata h, number v agar prompt k under gya to wo v as a string hi aata h.
+--->  To agar hme integer value chahiye to us string ko interger me convert karna hoga, uske liye use karte h: ParseInt() ka.
+--> ParseInt() :- iske under jo v dalenge wo integer ban jayega, ya uske integer part hme mil jayega. 
+
+
+--> iterate = repeat.
+1. Loop :- Used to iterate a piece of code.
+    
+    --> (a.) For Loop :- for loop k under jo v variables declare hote h, wo bas for loop tak simit rahte h, for loop k bahar use hm use nhi kar sakte.
+                        for(initializaton, condition, updation){
+                                                                //do something;
+                                                               }
+
+        (b.) Infinite loop :- waise loops jinke condition ya to miss hote h, ya always true hote h.
+            --> in this situation loop ke bahar ka code kavi execute hi nhi hoga.
+            --> (a.) for(let i = 1; i>=0; i++){
+                                                // do something;
+                                                }
+                (b.) for(let i = 1; i<=2; i--){
+                                                // do something;
+                                                } 
+                (c.) for(let i = 1;  ; i++){
+                                                // do something;
+                                                }                               
+                        --> In this case condition is missing, and missing condition means ture, results in Infinite loop.
+
+        
+        (c.) While Loop :- 
+                        --> let i = 0;
+                             while(i<=10){
+                                console.log(i);
+                                i++;
+                             }
+
+
+
+2. Dry Run :- Try code in paper.
+
+3. Nested Loop :- loop inside loop.
+               --> for(let i = 1; i<=3; i++){
+                                            for(let j= 1; j<=3; j++){
+                                                                     //do something;
+                                                                    }
+                                             }
+
+4. Break Keyword :- Loop ke under kahi v agar break likh diya, then, break loop ke execution ko rok dega aur control ko loop se bahar kar dega.
+     --> generaly break ko while loop k sath use karte h, but for loop k sath v use kar sakte h.
+    
+
+5. Loops with Arrays :- loops ke counter variable ko hm array ke variable index ki tarah use karte h.
+    --> let fruits = ["mango", "banana", "orange","litchi"];
+        for(let i = 0; i<fruits.length; i++){
+            console.log(i, fruits[i]);
+        }
+
+6. Nested Loops with Nested Arrays :- 
+            --> let heros = [ ["ironman", "spiderman", "thor"], ["superman", "wonder woman", "flash"] ];
+                for(let i = 0; i<heros.length; i++){
+                    console.log(` List #${i}`);
+                    for(let j = 0; j<heros[i].length; j++){
+                        console.log(heros[i][j]);
+                    }
+                }
