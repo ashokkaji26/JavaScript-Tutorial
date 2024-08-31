@@ -1,4 +1,5 @@
-
+                                   ***************** JavaScript-3 *********************
+--------------------------------------------------------------------------------------------------------------------------------
 
 *** Topics covered :- 
                     1. String Methods
@@ -7,7 +8,7 @@
                     4. Array Refrence
                     5. Constant Arrays
                     6. Nested Array
-
+----------------------------------------------------------------------------------------------------------------------------------------
 *** Important points :-
 
 --> Immutable = jis chij ko change nhi kar sakte.
@@ -19,16 +20,22 @@
     --> order of execution will be from left to right.
     --> str.trim().toUpperCase();
 
+3. Math.floor() :- This method rounds a number DOWN to the nearest integer.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
 1. String Methods :- 
 --> Methods :- actions that can be performed on objects.
 --> formate :- stringName.method()
---> variables me methods ko apply karne se us variable me koi change nhi hota h, method apply karne ke bad 
-    ek new variable ban jata h, aur purane variable ke under as it is value rahta h.
+--> strings me methods ko apply karne se us string me koi change nhi hota h, method apply karne ke bad 
+    ek new string ban jata h, aur purane string ke under as it is value rahta h.
 
-                (a.) str.trim() :- removes whitespaces from both the ends of string, and returns a new string.
+                (a.) trim() :- removes whitespaces from both the ends of string, and returns a new string.
+                    --> str.trim();
                 --> trim method does'nt remove spaces between contents, only removes starting and ending spaces.
 
                 (b.)--> str.toUpperCase();
@@ -45,7 +52,7 @@
 
                 (d.) slice() :- Returns a part of the original string as a new string.
                     --> str.slice(starting index, last index +1);
-                    --> str.slice(string index); // in this case ending index will be length of string.
+                    --> str.slice(starting index); // in this case ending index will be length of string.
                     --> str.slice(-num); = str.slice(string length - num);
 
                 (e.) replace() :- searches a value in the string & returns a new string with replaced value.
@@ -58,7 +65,7 @@
                         --> str.repeat(3);  // will return : "mangomangomango".
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 ---> Data Structures :- means wo Structures jo datas ko store karane me kam aate h.
 2. Array :- Hm ek single variable lete h, aur uske under bht sare items ko ek sath store kara dete h.
@@ -80,10 +87,10 @@
         --> fruits.length; = 3.
         --> fruits[10] = "pineapple";
         --> fruits.length; = 11; // we store "pineapple" at index 10.
-        --> 3-9 indeces are empty.
+        --> in this case, 3-9 indeces are empty.
 
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 3.  Array Methods :- 
                     (a.) push() :- Array ke last me kisi item/element ko add karke return kar dega.
@@ -104,14 +111,15 @@
                         --> Array.indexof("element"); // returns: element's index.
 
                     (f.) include() :- searches elements inside arrays, and returns boolean values true/false.
-                                      ture if element present in array, and false is not present.
-                        --> Array.include("element");
+                                --> ture if element present in array, and false if not present.
+                                --> Array.include("element");
 
                     (g.) concate() :- used to add/merge two arrays.
                         --> concat karne se original arrays change nhi hote h.
-                        --> Array1.concat(Array2);  // Array1 and Array2 will be merged together and first Array1's element occur then Array2's elements.
+                        --> Array1.concat(Array2);  // Array1 and Array2 will be merged together and first Array1's element will occur then Array2's elements.
 
                     (h.) reverse() :- Array ke elements ka order reverse karne k liye.
+                        --> Array.reverse();
                         --> reverse karne se original array change ho jayega, means uske elements k order change ho jayega.
                     
                     (i.) slice() :- slice hme original array ke kisi portion k copies deta h, aur ye original array ko change nhi karta h.
@@ -124,33 +132,34 @@
 
 
                     (j.) splice() :- it remove/replace/add elements in array.
+                        --> Array.splice();
                         --> splice original array ke under hi changes karta h.
                         --> splice(starting index, delete_count, elements to add); // three arguments.
-                        --> Array.splice(4);  // if only starting index, then it will work as slice method.
+                        --> Array.splice(4);  // if only starting index, then it will work as slice method, means 4th index ke bad wala sare elements move ho kar new aaray me aa jayenge, aur original array change ho jayega.
                         --> Array.splice(0,1); // it will delete first element of array.
                         --> Array.splice(4,2,"element1", "element2"); // it will delete 2 elements from index 4, and two elements from index 4.
                         
-                    (k.) sort() :- sorts an array. arrange in ascending or descending order.
+                    (k.) sort() :- sorts an array. Arranges in ascending or descending order.
                         --> Array.sort();
                         --> How sorting works :- sorting karte time array k under jitna v data hota h, sort methoed 
                                                  sabse pahle un data ko strign me convert karta h,fir sortin karta h.
                         --> sort method ko numbers ke liye use nhi karenge.
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 --> Refrence = address in memory.
 4. Array Refrences :- Jab v JavaScript k under koi array create hota h, to uske liye ek refrence variable create hota h.
                     --> Aur Array ka jo name hota h, wahi refrence variable hota h.
                     --> Refrence variable array k elements ko store nhi karta h, wo element's ke addresses ko store karta h.
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 5. Constant Arrays :- const arr = [1,2,3,4];
     --> Jab v hm constant arrays banate h to uske elements ke sath operation kar sakte h.
     ---> but hm constant array ko completely new array me convert nhi kar sakte h.
-    --> To array elements ki address ko store karta h, isliye wo address constant ho jata h,aur hm address ko change nhi kar sakte.
+    --> Isliye array, elements ki address ko store karta h, isliye wo address constant ho jata h,aur hm address ko change nhi kar sakte.
 
-
+------------------------------------------------------------------------------------------------------------------------------------
 
 6. Nested Arrays/Multidimensional array :- array of arrays.
     --> array[row][col]; // to access individual elements inside nested arrays.

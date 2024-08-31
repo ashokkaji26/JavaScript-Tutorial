@@ -1,19 +1,23 @@
-**********************  JavaScript-4 *************************
-
+                                    **********************  JavaScript-4 *************************
+------------------------------------------------------------------------------------------------------------------------------------
 *** Topics covered :- 
-                        1. Loop
-                        2. Dry Run
-                        3. Nested Loop
-                        4.
-                        5.
-                        6.
+                        1. Loop                                7. 
+                        2. Dry Run                             8.
+                        3. Nested Loop                         9. 
+                        4. Break Keyword 
+                        5. Loops with Arrays
+                        6. Nested Loops with Nested Arrays
+
+------------------------------------------------------------------------------------------------------------------------------------
 
 *** Important Points :- 
 ---> Prompt se jo v input aata h, wo string ke form me aata h, number v agar prompt k under gya to wo v as a string hi aata h.
 --->  To agar hme integer value chahiye to us string ko interger me convert karna hoga, uske liye use karte h: ParseInt() ka.
 --> ParseInt() :- iske under jo v dalenge wo integer ban jayega, ya uske integer part hme mil jayega. 
 
+------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------
 --> iterate = repeat.
 1. Loop :- Used to iterate a piece of code.
     
@@ -43,9 +47,21 @@
                                 i++;
                              }
 
+        (d.) For of Loop :- Is loop ko hm tab use karte h, jab hme kisi collection ke item ko access karna ho, like Arrays and strings.
+            --> let fruits = ["mango", "banana", "Litchi", "orange"];
+                for(fruit of fruits){
+                                        console.log(furit);
+                                    }
 
+            --> for(char of "sachinkaji"){
+                                             console.log(char);
+                                          }
 
-2. Dry Run :- Try code in paper.
+------------------------------------------------------------------------------------------------------------------------------------
+
+2. Dry Run :- Try code in paper.  Dry is very important in coding.
+
+------------------------------------------------------------------------------------------------------------------------------------
 
 3. Nested Loop :- loop inside loop.
                --> for(let i = 1; i<=3; i++){
@@ -54,9 +70,12 @@
                                                                     }
                                              }
 
+------------------------------------------------------------------------------------------------------------------------------------
+
 4. Break Keyword :- Loop ke under kahi v agar break likh diya, then, break loop ke execution ko rok dega aur control ko loop se bahar kar dega.
      --> generaly break ko while loop k sath use karte h, but for loop k sath v use kar sakte h.
     
+------------------------------------------------------------------------------------------------------------------------------------
 
 5. Loops with Arrays :- loops ke counter variable ko hm array ke variable index ki tarah use karte h.
     --> let fruits = ["mango", "banana", "orange","litchi"];
@@ -64,6 +83,7 @@
             console.log(i, fruits[i]);
         }
 
+------------------------------------------------------------------------------------------------------------------------------------
 6. Nested Loops with Nested Arrays :- 
             --> let heros = [ ["ironman", "spiderman", "thor"], ["superman", "wonder woman", "flash"] ];
                 for(let i = 0; i<heros.length; i++){
@@ -72,3 +92,15 @@
                         console.log(heros[i][j]);
                     }
                 }
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+7. Nested for of Loop :- For of Loop for nested Arrays.
+    --> let heros = [ ["ironman", "thor", "spiderman"], ["wonder woman", "superman", "flash"]];
+        for(List of heros){
+                            for(hero of List){
+                                                console.log(hero);
+                                             }
+                          }
+
+------------------------------------------------------------------------------------------------------------------------------------ 

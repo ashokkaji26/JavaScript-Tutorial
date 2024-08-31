@@ -1,5 +1,5 @@
-******************************* JavaScript Notes - 1 ***********************************
-
+                    ******************************* JavaScript Notes - 1 ***********************************
+--------------------------------------------------------------------------------------------------------------------------------------
 
 **** Topics covered :-   1. variables                      8. Binary operators
                          2. Data types in JavaScript       9. Primary operators
@@ -9,6 +9,7 @@
                          6. Keywords in JavaScript         13. Concatenation
                          7. Assignment operators           
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 **** Important Points :- 
 
@@ -23,10 +24,12 @@
                    it is desinged by Microsoft.
 
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 
 1. variables :- It is simply a name of storage location.  
 ---> Each variables have a data limit, means we can't store unlimited data in some variable.
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 2. Data types in JavaScript :-
                     * Primitive types :- sabse basic & sabse fundamental
@@ -47,6 +50,7 @@
                                         6. Bigint
                                         7. Symbol 
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 3. Operations in JavaScript :- 
 --> operands :- jiske uper Operation perform kiya jata h.
@@ -58,10 +62,12 @@
                  5. % modulo(remainder operator)
                  6. ** exponentiation(power operator)
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 4. NaN(Not a Number) :- NaN is a JavaScript property, and it is a number which represents invalid numbers. eg:- 0/0.
 --> operations can be perform with NaN but the answers will be also Nan.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 --> precedence = priority.
 5. Operator precedence :- kisi expression ko solve karne ke liye operators ka priority.
@@ -76,6 +82,7 @@
                             --> in case of same priority we follow Left to right rule. 
                             --> in case of multiple power opertor only follow right to left rule.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 6. Keywords in JavaScript :- these are reserved words which have fixed meanings, and can't use as a variable or something else.
 
@@ -94,6 +101,7 @@
             --> age + 2;   --> no updation, only 25 will print in console.
             --> age = age + 2; --> age will updated.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 7. Assignment operators :-  let age = 22;
                             (a.) age += 2;
@@ -101,15 +109,20 @@
                             (c.) age *= 2;
                             (d.) age /= 2;
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 8. Binary operators :- jis operators ko 2 operands chahiye hota h.
                     eg:- +, -, *, / etc.
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 9. Primary operators :- ise ek hi operands chahiye hota h.
                       eg:- (a.) ++age(pre-increment)  --> change, then use.
                            (b.) age++(post-increment) --> use, then change.
                            (c.) --age(pre-decrement)
                            (d.) age--(post-decrement)
+
+--------------------------------------------------------------------------------------------------------------------------------------
 
 10. Identifier Rules :- all JavaScript variables must have unique names, called Identifiers.
                      (a.) Names can contain letters, digits, underscores, and dollar sign($).
@@ -118,12 +131,14 @@
                      (d.) Names are case sensitive.
                      (e.) reserved words can't be used as names.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 11. Way of writing Identifiers :- 
                                 (a.) camelCase  (JS & C++ naming convention)
                                 (b.) snake_case (Python naming convention)
                                 (c.) PascalCase    
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 ---> In programming Indices = position.
 12. String Indices :-  JavaScript me jo string bante h, uske har ek characters ko ek index(position) milti h.
@@ -132,8 +147,10 @@
                        --> Aur hm chahe to string ke kisi v particular character ko access kar sakte h using index. eg:- variable_name[index];
                        --> variable.length; --> string ki length, means how many characters are there in string.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 13. Concatenation :- multiple strings ko add kar dena.
                     eg:- (a.) "Sachin" + " " + "Kaji" = "Sachin Kaji";
                          (b.) "sachin" + 26 = "sachin26";
 
+--------------------------------------------------------------------------------------------------------------------------------------

@@ -1,4 +1,5 @@
-******************************* JavaScript Notes - 2 ***********************************
+                        ******************************* JavaScript Notes - 2 ***********************************
+--------------------------------------------------------------------------------------------------------------------------------------
 
 *** Topics covered :-
                     1. Console.log()                     6. Truthy & Falsy
@@ -7,7 +8,7 @@
                     4. Comparison for non-numbers        9. Prompt
                     5. conditional statements            
                
-               
+--------------------------------------------------------------------------------------------------------------------------------------
 
 *** Important Points :- 
 
@@ -19,6 +20,8 @@
     to functioning add karne se pahle sare html elements load hone chahiye isliye JavaScript ko sabse last me 
     add karte h.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 1. Console.log() :- Console window me kuchh v chij print karane ke liye.
                  --> console.log() ka use isliye hota h, qki JavaScript browser se connected nhi hota h,
                      to JavaScript me kuchh v chij print karna chahte aur wo browser ke console me dikhe uske liye
@@ -28,6 +31,7 @@
                           (c.) console.log(2 + 2);
                           (d.) console.log("Sachin", "Kaji", 123);
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 2. Template Literals :- jab v hme string ke under variables ko add karna hota h to hme bht sari chije karni padti h,
                         like sare strings ko concatenate karna, variables ko add karna to isi concatenation ko easy
@@ -39,6 +43,7 @@
                          --> console.log(output);
                      --> way-3(Template Literals) :- ` The total price is: ${pencilPrice + penPrice} Rupees.`;
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 3. Operators in JavaScript :- 
                     1. Arithmetic Operators :- + , - , * , / , % , **
@@ -56,12 +61,13 @@
                     --> jab multiple expressions hote h, aur bht sare Logical Operators hote h, fir hm Logical Operators 
                         ko left to right calculate karte h.
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 
 4. Comparison for non-numbers :- each character has its own unique code called "unicode" that get compared.
 
 --> Condition ya to true hota h ya false hota h.
 
+--------------------------------------------------------------------------------------------------------------------------------------
 5. Conditional statements :- 
                           1. If statement :- 
                                            if(some Condition) {
@@ -110,6 +116,7 @@
 
                                            }
 
+--------------------------------------------------------------------------------------------------------------------------------------
 
 6. Truthy & Falsy :- JavaScript ke under har ek chij ke pass apni ek boolean value hoti h, wo value ya to 
                      true ho sakti ya to false.
@@ -118,7 +125,7 @@
                      --> Falsy values :- false, 0 , -0 , 0n(big int value), ""(empty string), null, undefined, Nan.
                      --> Truthy values :- Everything else.                                       
 
-
+--------------------------------------------------------------------------------------------------------------------------------------
 
 7. Switch statement :- ye if-else statement ko hi likhne ka dusra tarika h, jab fised value ke basis par comparison hote h.
                         let string = "AC";
@@ -139,6 +146,7 @@
                             default:
                             console.log("Electricity is not available right now.");
                         }
+--------------------------------------------------------------------------------------------------------------------------------------
 
 8. Alert :- display par ek alert message show karne ke liye.
 --> alert("something is wrong!");
@@ -146,11 +154,13 @@
    --> console.error("this is an error message!");
    --> console.warn("this is a warning message!");
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 9. prompt :- user se input lene ke liye prompt ka use hota h. aur us input ko hm kisi variable me store kara sakte h.
   --> let firstName = prompt("Enter your firstName");
   --> let lastName = prompt("Enter your lastName");
   --> console.log(firstName, lastName);
                         
-
+--------------------------------------------------------------------------------------------------------------------------------------
 
                                             
