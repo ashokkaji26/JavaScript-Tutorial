@@ -1,0 +1,105 @@
+
+                                  ********************* javaScript -5 *************************
+
+-------------------------------------------------------------------------------------------------------------------------------------
+*** Topics Covered :- 
+                      1. JS objects literals (Data Strucutres).          6. Math Object          
+                      2. Get values of keys.                             7. Random Integers
+                      3. Add/Update Values of Keys.                      
+                      4. Nested Object_Literal.                         
+                      5. Array of objects.                              
+
+-------------------------------------------------------------------------------------------------------------------------------------
+*** Important Points :- 
+
+--------------------------------------------------------------------------------------------------------------------------------------
+--> there is little difference between 'object' & 'object literals' in javaScript.
+
+1. Object literals :- Object literal is a collection of properties, and a property contains (key, value) pair.
+    --> object literal is also used to store complex entities.
+    --> let student = {
+                        name: "sachin",
+                        age: 22,
+                        marks: 94
+                      }
+    --> Generally, object literals ko hm constant banate h.
+    --> Object literal me koi specific order nhi hota, like arrays. But (key, value) pair hmehsa sath me rahti h.
+    --> Object literal ke under hm array ko as a value of key store kara sakte h.
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+2. Get values of keys :
+            (a.) Object_Literal["key_Name"];    --> In this case we can use a variable instead of key_Name, without double quote.
+            (b.) Object_Literal.key_Name;       --> In dot operator we can't use variable in place of key_Name.
+
+        ---> JS automatically converts object's keys to strings.
+        ---> Even if we made the number as a key, the number will be converted to string.
+    *** ---> Keys k values ko access karne ke liye, Object ke under index lena possible nhi h, keys have converted into strings.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+3. Add/Update Values of keys :- 
+                            (a.) Update existing key's value :-      Object_Literal.key_Name = "new_value";
+                            (b.) Adding properties :-                Object_Literal.new_key = "value";
+                            (c.) deleting properties :-              delete Object_Literal.key_Name;
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+4. Nested Object_Literals :- Object of objects.
+                        --> storing informations of mutltiple students.
+                        --> const classInfo = {
+                                                sachin: {
+                                                            grade: "A",
+                                                            city: "Binwaliya"
+                                                        },
+                                                manisha: {
+                                                            grade: "A+",
+                                                            city: "Sohariya"
+                                                        }
+                                              }
+                        --> we can add/update/delete properties of Nested Object_Literal same as Object_Literal.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+5. Array of objects :- objects inside an array.
+                    --> Storing informations of mutltiple students.
+                    --> const classInfo = [
+                                            {
+                                                name: "sachin",
+                                                city: "Binwaliya"
+
+                                            },
+                                            {
+                                                name: "Manisha",
+                                                city: "Sohariya"
+                                            },
+                                          ]
+
+                    --> Here also we can add/update/delete properties of Nested Object_Literal same as Object_Literal.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+6. Math Object :- Collection of all mathematical properties and methods.
+
+                (a.) Properties :- 
+                                1. Math.PI;
+                                2. Math.E;
+
+                (b.) Methods :- 
+                             1. Math.abs(n);        --> gives absolute value.
+                             2. Math.pow(a,b);      --> a to the power b.
+                             3. Math.floor(n);      --> round off & gives value <= number.
+                             4. Math.ceil(n);       --> round off & gives value >= number.
+                             5. Math.random(n);     --> it gives random value between 0 & 1, excluding 1.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+7. Random Integers :- From 1 to 10.
+                    --> Math.floor(Math.random() * 10) + 1;      --> It will generate random integers from 1 to 10.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
