@@ -3,14 +3,21 @@
 
 *** Topics Covered :- 
                     1. Functions(Very Important)
-                    2. 
-                    3. 
-                    4. 
-                    5.
+                    2. Functions withh arguement
+                    3. Return keyword
+                    4. Scope
+                    5. Function expression
+                    6. Higher order function
+                    7. Methods
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 *** Important Points :- 
+                    
+                      --> Read about 'hoisting'.
+                      --> If there is a nested function which has a outer function and a inner function, if we declare
+                          some variables in outer function, and if inner function is defined before those variables we can still use those 
+                          variables inside inner function due to hoisting. 
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
@@ -26,9 +33,11 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 
 2. Functions with arguements :- Values we pass to the function.
+
                              --> function functionName(parameter1, parameter2....){
                                                                         // do something.
                                                                       }
+
                              --> functionName(arg1,arg2.....);
                              --> order of arguements and parameters is very Important because, arg1 will store in parameter1, and so on...
 
@@ -36,10 +45,12 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 
 3. Return Keyword :- Return Keyword is used to return some value from the function.
+
                   --> function functionName(arg1) {
                                                     // do something.
                                                     return value;
                                                   }
+
                   --> Aur returned value ko hm kisi variable me store kara sakte h, ya directly use kar sakte h.
                   --> We can also return string from function.
                   --> Jaise hi function se hm koi value return karwate h, uske aage ka code execute hona band ho jata h.
@@ -48,15 +59,98 @@
                       karte h aur ek object/array ko return kara dete h.
 --------------------------------------------------------------------------------------------------------------------------------------
 
+4. Scope :- Scope determines the accessebility of variables, objects & functions from different parts of the code.
+          --> Scope hme batata h ki kaun se variable ko kaha use kiya ja sakta h aur kaha nhi.
+
+          (a.) Global scope :- Jo variables directly JS file k under define hote, h wo pure file me kisi v function ya kisi v line me kahi v use ho sakte h.
+
+          (b.) function scope :- Varialbles defined inside a function are not accessible from out the function.
+                              --> function ke under wale variables ko hm function ke bahar use nhi kar sakte, isliye function ke bahar 
+                                  same name se hm dusra variable define kar sakte h.
+                              --> Jab code me same name se do variables ho, ek Global scope & 2nd function scope to function ke under hmesha
+                                  2nd wala variable use hoga due to specificity, aur function k bahar 1st variable use hoga.
+                              --> Function k under Global scope wale variables use ho sakte h.
+
+          --> Block = {}
+          (c.) Block scope :- Varialbles defined inside a {} Block can't ve accessed from outside the Block.
+
+                            --> Block scope sirf 'let' & 'const' keyword pe apply karta h.
+                            --> kisi block k under agar 'var' ko use karke koi variable define kiya jaye to use out of the block access kiya ja sakta h,
+                                but ye achha practice nhi hota h.
+                            --> conditional statements and for loop me v jo variable define hote h, wo v block scope hote h, in variables ko loop ya if-else ke bahar use nhi kar sakte.
+
+          (d.) Lexical scope :- Lexical scope k under hm 'Nested function' k concept ko use karte h.
+                              --> Nested function me bahar wale variable under wale function me accessible honge, but under wale variables 
+                                  bahar wale functions me accessible nhi honge.
+                              --> Lexical scope bahar se under ki taraf kam karta h, under se bahar ki taraf nhi.
+                              --> Nested function me under wale functions ka v scope block scope hota h, so under wale functions ko hm 
+                                  outer function ke under hi use kar sakte h, outer function k bahar use nhi kar sakte h.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+5. Function expressions :- Hm ek function create to karte h, but use kisi variable me store karate h.
+
+                        --> let variable_Name = function(a,b){
+                                                    return a+b;
+                                                   }
+
+                        --> variable_Name();   // to call the function.
+                        --> ye functions ko likhne ka dusra tarika h.
+                        --> It is a nameless function.
+                        --> Jaise ek normal variable ki value ko update/delete/new value ya as a arguement kisi function ko pass kar
+                            sakte h, ye sare kam function expressions k sath karna v possible h.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+6. Higher Order Functions :- Higher order functions are special function jo niche me se koi ek ya dono kam karte h.
+
+                            (a.) Takes one or multiple functions as arguements.
+                                Note:-  higher order function me hme hmesha function ki definition ko pass karna as a variable, function ki calling statement ko nhi bhejna h as a arguement.
+
+                                    --> function multipleGreet(func,count){    // higher order function.
+                                                                            for(let i = 1; i<=count; i++){
+                                                                                                            func();
+                                                                                                          }
+                                                                           }
+
+                                        let greet = function(){     // function expression.
+                                                                 console.log("hello");
+                                                                }
+
+                                        multipleGreet(greet, 10);   // function call.
+
+
+
+                            (b.) Returns a function.
+
+                                    --> function oddOrEvenFactory(request) {
+                                        if(request == "odd"){
+                                            let odd = function(n) {
+                                                console.log(!(n%2==0));
+                                            }
+                                            return odd;
+                                        }
+                                        else if(request == "even"){
+                                            let even = function(n){
+                                                console.log(n%2 == 0);
+                                            }
+                                            return even;
+                                        }
+                                        else{
+                                            console.log("Wrong request");
+                                        }
+                                    }
+
+                                    --> Now when this function returns a function then we need to store returned function in some variable.
+                                    --> let request = "odd/even";
+                                    --> let return = oddOrEvenFactory(request);
+                                    --> return(n);   // returned function call.
+
+
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
+7. Methods() :- Jo functions objects ke under define hote h, un functions ko mehtods kahte h.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
