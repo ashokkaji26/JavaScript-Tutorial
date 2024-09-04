@@ -1,4 +1,5 @@
-                    ******************************* JavaScript Notes - 1 ***********************************
+                    ******************************* JavaScript Notes - 6 ***********************************
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 *** Topics Covered :- 
@@ -150,9 +151,43 @@
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-7. Methods() :- Jo functions objects ke under define hote h, un functions ko mehtods kahte h.
+7. Methods() :- Actions that can be performed on an object.
+             -->  Jo functions objects ke under defined hote h, un functions ko mehtods kahte h.
+
+             --> const calculator = {
+                add: function(a,b){
+                    return a + b;
+                }
+                sub: function(a,b){
+                    return a-b;
+                }
+                mul: function(a,b){
+                    return a*b;
+                }
+             }
+
+            --> We used multiple methods on arrays & strings, this is possible because JS's arrays & strings are objects internally.
+            --> typeof any_array;   // object
+            --> JS ke under maximum chije object hoti h.
+
+
+            *** Method Shorthand :- 
+
+                                 --> const calculator = {
+                                        add(a,b) {
+                                            return a+b;
+                                        },
+                                        sub(a,b){
+                                            return a-b;
+                                        },
+                                        mul(a,b){
+                                            return a*b;
+                                        }
+                                 }
+
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
-
+                                              **** The End ****
+                                              
 --------------------------------------------------------------------------------------------------------------------------------------
