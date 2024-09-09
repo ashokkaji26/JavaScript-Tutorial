@@ -123,7 +123,9 @@
                      --> iska ye mtlb nhi h ki agar koi variable banaye to uska value T/F hoga, uski apni jo
                          value h wahi rahega, bas boolean context me uske pass true ya false value hoga.
                      --> Falsy values :- false, 0 , -0 , 0n(big int value), ""(empty string), null, undefined, Nan.
-                     --> Truthy values :- Everything else.                                       
+                     --> Truthy values :- Everything else.  
+
+                     --> Boolean function in JavaScript converts any non-empty string or non-zero number to 'true'.                                     
 
 --------------------------------------------------------------------------------------------------------------------------------------
 

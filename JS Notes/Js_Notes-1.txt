@@ -153,4 +153,12 @@
                     eg:- (a.) "Sachin" + " " + "Kaji" = "Sachin Kaji";
                          (b.) "sachin" + 26 = "sachin26";
 
+                    *** --> The + operator performs string Concatenation when one of the operands is a string.
+                            eg:- let x = "55.5";
+                                  let y = 10;
+                                  console.log(x + y); // it prints 55.510
+
+                    *** --> And for division, multiplication and subtraction JS converts that string to a number and perform 
+                            normal arithmatic operations.
+
 --------------------------------------------------------------------------------------------------------------------------------------
